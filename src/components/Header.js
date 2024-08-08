@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
  
-import logoImage from '../images/Designer2.jpeg';
+import logoImage from '../images/Designer2.png';
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
       <Link to="/">
         <img src={logoImage} alt="Logo" className="logo" />
       </Link>
-      <h1>Trello Clone</h1>
+      <h1><Link to="/">Trello Clone</Link></h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link> 

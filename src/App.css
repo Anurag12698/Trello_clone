@@ -25,7 +25,7 @@ nav {
   gap: 15px; 
 }
 
-nav a {
+nav a,h1 a{
   color: white; 
   text-decoration: none; 
   padding: 5px 10px; 
