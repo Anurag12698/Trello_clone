@@ -1,0 +1,106 @@
+  .app-container {
+    display: flex;
+    flex: 1;
+  }
+
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-top: 85px;
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.collapsed {
+    transform: translateX(-100%);
+  }
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .close-icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar ul li a:hover {
+    background-color: #34495e;
+  }
+
+  .main-content-workspace {
+    margin-left: 50px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    flex-grow: 1;
+    min-height: 70vh;
+    transition: margin-left 0.3s ease;
+  }
+
+  .main-content-workspace.expanded {
+    margin-left: 0;
+  }
+
+  .menu-icon {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #2c3e50;
+  }
+
+
+  .sticky-notes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 250px; 
+    padding-top: 85px;
+}
+
+.sticky-note {
+    background-color: #fdfd96; 
+    color: #333; 
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
