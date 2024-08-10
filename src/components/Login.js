@@ -17,7 +17,7 @@ function Login() {
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
-            <label>Email</label>
+            <label>Email:</label>
             <input
               type="email"
               value={email}
@@ -26,7 +26,7 @@ function Login() {
             />
           </div>
           <div className="input-group">
-            <label>Password</label>
+            <label>Password:</label>
             <input
               type="password"
               value={password}
@@ -36,12 +36,12 @@ function Login() {
           </div>
           <button type="submit" className="login-button">Login</button>
         </form>
-        <div className="social-login">
+        {/* <div className="social-login">
           <p>Or login with:</p>
           <button className="google-button">Google</button>
           <button className="microsoft-button">Microsoft</button>
           <button className="apple-button">Apple</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
