@@ -88,6 +88,10 @@
     padding-top: 85px;
 }
 
+.sticky-notes-container a{
+  text-decoration: none;
+}
+
 .sticky-note {
     background-color: #fdfd96; 
     color: #333; 
@@ -104,3 +108,6 @@
     justify-content: center;
     text-align: center;
 }
+/* .sticky-note {
+
+} */

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
 import "./Sidebar.css";
-
-function Workspace() {
+function MyTask() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -14,17 +13,17 @@ function Workspace() {
     <>
       <div className={`sidebar ${isSidebarOpen ? "open" : "collapsed"}`}>
         <div className="sidebar-header">
-          <h2>Workspace</h2>
+          <h2>Board</h2>
           <FaTimes className="close-icon" onClick={toggleSidebar} />
         </div>
         <ul>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/Board-1">Board-1</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/Board-2">Board-2</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/tasks">Tasks</Link>
           </li>
           <li>
@@ -32,7 +31,7 @@ function Workspace() {
           </li>
           <li>
             <Link to="/settings">Settings</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div
@@ -42,14 +41,15 @@ function Workspace() {
           <FaBars className="menu-icon" onClick={toggleSidebar} />
         )}
         <div className="sticky-notes-container">
-        <Link to="/MyTask"><div className="sticky-note">My Task</div></Link>
-          <div className="sticky-note">Team Workspace</div>
-          <div className="sticky-note">Family</div>
-          <div className="sticky-note">Diary</div>
+          <Link to="/MyTask">
+            <div className="sticky-note">Create</div>
+          </Link>
+          <div className="sticky-note">Board-1</div>
+          <div className="sticky-note">Board-2</div>
+          {/* <div className="sticky-note">Diary</div> */}
         </div>
       </div>
     </>
   );
 }
-
-export default Workspace;
+export default MyTask;
