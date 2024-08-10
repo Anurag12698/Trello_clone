@@ -1,0 +1,89 @@
+.home {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #a445b2, #fa4299);
+    color: white;
+  }
+  
+  .landing-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #a445b2, #fa4299);
+    color: white;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .landing-content {
+    max-width: 50%;
+    z-index: 2;
+  }
+  
+  .landing-content h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .landing-content p {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+  }
+  
+  .input-group {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1;
+  }
+  
+  .input-group button {
+    padding: 15px 25px;
+    background-color: #0079bf;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-group button:hover {
+    background-color: #026aa7;
+  }
+  
+  .watch-video {
+    color: white;
+    font-size: 1em;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .image-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
