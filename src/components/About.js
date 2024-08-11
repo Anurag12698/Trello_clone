@@ -1,22 +1,22 @@
-// About.js
-import React from 'react';
+import React from "react";
+import "./About.css";
 
 function About() {
   return (
-    <div className="about-page">
-      <h1>About Trello Clone</h1>
+    <div className="main-content">
+      <h2>About Trello Clone</h2>
       <p>
-        This is a Trello Clone built using React. It allows users to create boards,
-        lists, and cards to organize tasks efficiently.
+        This is a Trello Clone built using React. It allows users to create
+        boards, lists, and cards to organize tasks efficiently.
       </p>
-      <h2>Features</h2>
+      <h3>Features</h3>
       <ul>
         <li>Create and manage boards</li>
         <li>Add lists to boards</li>
         <li>Create and move cards</li>
         <li>Drag and drop functionality</li>
       </ul>
-      <h2>Getting Started</h2>
+      <h3>Getting Started</h3>
       <p>
         To get started, simply create an account and log in. You can then create
         your first board and start organizing your tasks!

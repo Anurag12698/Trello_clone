@@ -12,7 +12,9 @@ function Header() {
       <h1><Link to="/">Trello Clone</Link></h1>
       <nav>
         <Link to="/">Home</Link>
+        <Link to="/workspace">Workspaces</Link>
         <Link to="/about">About</Link> 
+        <Link to="/login">Login</Link> 
       </nav>
     </header>
   );
